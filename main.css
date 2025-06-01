@@ -1,5 +1,5 @@
       :root {
-        --size-max-width: 1200px;           /* 최대 너비 지정 (전체 레이아웃 제한용) */
+        --size-max-width: 1200px;
       }
       * {
         box-sizing: border-box;
