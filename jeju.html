@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주도 소개</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f28500;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px;
+    }
+
+    .logo img {
+      height: 74px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+    }
+
+     nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    main {
+      padding: 60px 40px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #1c1c1c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #f8f8f8;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      background-color:#f5f5f5;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="로고"></div>
+    <nav>
+      <ul>
+        <li><a href="main.html">| HOME |</a></li>
+        <li><a href="region.html">| 주요도시 |</a></li>
+        <li><a href="review.html">| 여행 후기 작성하기 |</a></li>
+        <li><a href="#">| 설명 |</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="section" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+      <h1>제주도</h1>
+      <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+        	제주도는 푸른 바다와 화산섬 지형, 이국적인 풍경이 어우러진 대한민국 최고의 휴양지입니다.
+          </section>
+    <section style="text-align: center; margin-bottom: 40px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ADvALPZTujk?si=6YLGxUqeEmHjMnHp&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+    <h1>제주도의 관광지</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/제주도/성산일출봉.jpg" alt="성산일출봉">
+        <div class="card-content">
+          <h3>성산일출봉</h3>
+          <p>바다 위 화산 분화구로, 해돋이 명소로 유명해요. 정상에서 바라보는 풍경이 압도적이에요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/한라산국립공원.jpg" alt="한라산 국립공원">
+        <div class="card-content">
+          <h3>한라산 국립공원</h3>
+          <p>제주 중심에 있는 활화산. 사계절 트레킹 코스로 사랑받으며, 겨울 설경이 특히 아름다워요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/협재해수욕장.jpg" alt="협재 해수욕장">
+        <div class="card-content">
+          <h3>협재 해수욕장</h3>
+          <p>에메랄드빛 바다와 하얀 모래가 조화를 이루는 해변. 가족 단위 여행객에게 인기예요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/우도.jpg" alt="우도">
+        <div class="card-content">
+          <h3>우도</h3>
+          <p>제주 동쪽에 있는 부속 섬으로, 땅콩 아이스크림과 투명한 해변으로 유명해요. 배 타고 당일치기 가능해요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/만장굴.jpg" alt="만장굴">
+        <div class="card-content">
+          <h3>만장굴</h3>
+          <p>세계 최대 규모의 용암동굴. 내부가 시원하고 신비로운 분위기로, 자연 지질학의 정수를 볼 수 있어요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/제주돌문화공원.jpg" alt="제주 돌문화공원">
+        <div class="card-content">
+          <h3>제주 돌문화공원</h3>
+          <p>돌하르방, 민속유물, 화산암 조각 등 제주 전통과 자연이 어우러진 야외 박물관이에요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/카멜리아힐.jpg" alt="카멜리아힐">
+        <div class="card-content">
+          <h3>카멜리아힐</h3>
+          <p>동백꽃 명소로, 겨울부터 봄까지 다양한 꽃과 식물을 감상할 수 있는 정원형 관광지예요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+
+    <h1>제주도의 맛집</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/제주도/돈사돈.jpg" alt="돈사돈 본점점">
+        <div class="card-content">
+          <h3>돈사돈 본점</h3>
+          <p>제주 대표 흑돼지 전문점. 참숯에 구운 두툼한 고기와 멜젓(멸치젓갈) 조합이 특징이에요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/네거리식당.jpg" alt="네거리식당">
+        <div class="card-content">
+          <h3>네거리식당</h3>
+          <p>돼지육수로 만든 제주 전통 고기국수. 깊고 구수한 국물이 매력적이에요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/우진해장국.jpg" alt="우진해장국">
+        <div class="card-content">
+          <h3>우진해장국</h3>
+          <p>몸국으로 불리는 전통 해장국이 대표 메뉴. 모자반과 돼지고기가 들어간 담백한 맛이에요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/모슬포항식당가.jpg" alt="모슬포항 식당가 - 횟집거리">
+        <div class="card-content">
+          <h3>모슬포항 식당가 - 횟집거리</h3>
+          <p>갈치회, 방어회 등 싱싱한 생선을 바로 먹을 수 있는 해산물 식당들이 모여 있어요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/자매국수.jpg" alt="자매국수">
+        <div class="card-content">
+          <h3>자매국수</h3>
+          <p>투박하지만 정겨운 분위기에서 제주식 국수를 저렴하고 맛있게 먹을 수 있어요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/제주도/오조해녀의집.jpg" alt="오조해녀의집">
+        <div class="card-content">
+          <h3>오조해녀의집</h3>
+          <p>성산일출봉 근처의 유명한 전복요리 전문점. 전복죽이 부드럽고 바다 향 가득해요.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

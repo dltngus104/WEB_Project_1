@@ -1,149 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEB_Project_2301450</title>
-    <meta name="creator" content="이수현" />
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국내 여행지 정보 사이트</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans KR', sans-serif; background-color: #fff; color: #222; }
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
-      rel="stylesheet"
-    />
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px;
+      border-bottom:  solid #eee;
+    }
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/6d7cd68fbb.js" crossorigin="anonymous"></script>
+    .logo img { height: 100px; }
 
-    <link rel="stylesheet" href="main.css">
-  </head>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
 
-  <body>
-    <header class="header">
-      <div class="header_logo">
-        <h1 class="header_logo_title"><a href="#main">이수현</a></h1>
-      </div>
-      <nav class="header_nav_bar">
-        <ul class="header_menu">
-          <li><a class="header_menu_item" href="#main">Home</a></li>
-          <li><a class="header_menu_item" href="#about">About</a></li>
-          <li><a class="header_menu_item" href="#performance">Performance</a></li>
-          <li><a class="header_menu_item" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
 
-    <main>
-      <section id="main">
-        <div class="main_div">
-          <h2 class="main_title">
-            안녕하세요<br />
-            저는 <strong class="main_title--strong">Lee SuHyeon</strong> 입니다.
-          </h2>
-          <a class="main_contact" href="#contact">Contact me</a>
-        </div>
-      </section>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      margin: 40px auto;
+      max-width: 1000px;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+    }
+    .carousel-slide {
+      flex: 0 0 100%;
+      position: relative;
+    }
 
-      <section id="about" class="section max-container">
-        <h2 class="title">About me</h2>
-        <div class="about-desc">나에 대해서</div>
-        <div class="about-hopy-title">반려견 : HOPY💕</div>
-        <div class="about-images">
-          <img src="img/hopy_1.png" alt="hopy_1">
-          <img src="img/hopy_2.png" alt="hopy_2">
-          <img src="img/hopy_3.png" alt="hopy_3">
-        </div>
-        <br><br><br><br><br>
-        <div class="hobbies">
-          <!-- 음악 (왼쪽) -->
-          <div class="hobby-row">
-            <div class="hobby">
-              <i class="fa-solid fa-music hobby_icon"></i>
-              <p class="hobby_title">음악</p>
-              <p class="hobby_content">노래 듣는 것을 좋아합니다.<br>HONNE - Day 1 ◑</p>
-            </div>
-            <div class="hobby-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/47dzrigOXX4?si=4eNnC0UaUutZ93Aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-          <br><br>
-          <!-- 영화 (정반대 배치) -->
-          <div class="hobby-row" style="flex-direction: row-reverse;">
-            <div class="hobby">
-              <i class="fa-solid fa-video hobby_icon"></i>
-              <p class="hobby_title">예능 프로그램</p>
-              <p class="hobby_content">추리나 코믹한 예능 프로그램을<br>좋아합니다.<br>데블스플랜2</p>
-            </div>
-            <div class="hobby-video movie-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/HIHlu6-csZg?si=nM1OjqAqlfQ59fap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
 
-      <!-- About과 Performance 구분선 추가 -->
-      <hr style="border: 10px;; border-top:2px solid #222; margin: 20px;;">
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 0 0 12px 12px;
+    }
 
-      <!-- Performance 섹션 추가 -->
-      <section id="performance" class="section max-container">
-        <h2 class="title">Performance</h2>
-        <div class="performance-content">
-          <div class="performance-title">주요 활동 및 성과</div><br>
-          <ul class="performance-list">
-            <li>
-              <a href="unity/unity_1.html" target="_blank" title="유니티를 활용한 챗봇 만들기 및 ChatGPT 연동하기 캠프 블로그">1 : 유니티를 활용한 챗봇 만들기 및 ChatGPT 연동하기 캠프 (2024.01.03)</a>
-              <img src="img/performance_1.png" alt="performance_1">
-            </li>
-            <li>
-              <a href="unreal/unreal_1.html" target="_blank" title="언리얼기반 콘텐츠 제작과정 블로그">2 : 언리얼기반 콘텐츠 제작 과정 (2025.01.06)</a>
-              <img src="img/performance_2.png" alt="performance_2">
-            </li>
-            <li>
-              <a href="aiExpo/ai_1.html" target="_blank" title="AI EXPO KOREA 2025 국제인공지능대전 블로그">3 : AI EXPO KOREA 2025 국제인공지능대전 (2025.05.16)</a>
-              <img src="img/performance_3.png" alt="performance_3">
-            </li>
-          </ul>
-        </div>
-      </section>
+    .carousel-slide:hover .overlay {
+      opacity: 1;
+    }
 
-      <aside>
-        <a class="arrow-up-circle" href="#main" title="go to the top">
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-      </aside>
-    </main>
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
 
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <h2 class="title">Contact Info.</h2>
-        <p class="description">leesu041104@gmail.com</p>
-        <hr class="contact-indent" />
-        <p>ⓒleesu041104 - All rights reserved</p>
-      </div>
-    </footer>
 
-    <br><br><br><br>
-    <div id="disqus_thread"></div>
-      <script>
-          /**
-          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-          /*
-          var disqus_config = function () {
-          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-          */
-          (function() { // DON'T EDIT BELOW THIS LINE
-          var d = document, s = d.createElement('script');
-          s.src = 'https://web-project-10.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-      </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </body>
+
+    .carousel-indicator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 20px auto;
+    }
+
+    .carousel-indicator button {
+      border: none;
+      background: #eee;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .top-destinations {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .top-destinations h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .top-destinations p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .destination-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+.destination-grid a {
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+    .destination {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .destination img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="로고"></div>
+    <nav>
+      <ul>
+        <li><a href="main.html">| HOME |</a></li>
+        <li><a href="region.html">| 주요도시 |</a></li>
+        <li><a href="review.html">| 여행 후기 작성하기 |</a></li>
+        <li><a href="#">| 설명 |</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="carousel">
+  <div class="carousel-track" id="carousel-track">
+    <div class="carousel-slide">
+      <img src="img/서울/seoul.jpg" alt="서울">
+      <div class="overlay">대한민국의 수도, 전통과 현대가 공존하는 서울</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/강원도/강릉.jpg" alt="강릉">
+      <div class="overlay">동해 바다를 품은 강원도 강릉</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/전라도/담양.png" alt="담양">
+      <div class="overlay">대나무 숲으로 유명한 전라남도 담양</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/제주도/제주.jpg" alt="제주도">
+      <div class="overlay">푸른 바다와 오름이 펼쳐지는 제주도</div>
+    </div>
+  </div>
+</section>
+
+  <div class="carousel-indicator">
+    <button onclick="prevSlide()">◀</button>
+    <span id="slide-indicator">01 / 04</span>
+    <button onclick="nextSlide()">▶</button>
+  </div>
+
+<section class="top-destinations">
+  <h2>TOP 3 여행지</h2>
+  <p>서울, 부산, 대전에서 만나는 다양한 매력</p>
+  <div class="destination-grid">
+    <a href="seoul.html" class="destination">
+      <img src="img/서울/seoul.jpg" alt="서울">
+      <strong>서울</strong>
+    </a>
+    <a href="busan.html" class="destination">
+      <img src="img/부산/busan.jpg" alt="부산">
+      <strong>부산</strong>
+    </a>
+    <a href="daejeon.html" class="destination">
+      <img src="img/대전/daejeon.jpg" alt="대전">
+      <strong>대전</strong>
+    </a>
+  </div>
+</section>
+
+  <script>
+    let currentSlide = 0;
+    const totalSlides = 4;
+    const track = document.getElementById('carousel-track');
+    const indicator = document.getElementById('slide-indicator');
+
+    function updateSlide() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      indicator.textContent = `${String(currentSlide + 1).padStart(2, '0')} / 04`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    }
+
+    updateSlide();
+  </script>
+</body>
 </html>

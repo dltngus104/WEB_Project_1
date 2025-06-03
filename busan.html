@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부산 소개</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003f8a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px;
+    }
+
+    .logo img {
+      height: 74px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    main {
+      padding: 60px 40px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #1c1c1c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #f8f8f8;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      background-color:#f5f5f5;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="로고"></div>
+    <nav>
+      <ul>
+        <li><a href="main.html">| HOME |</a></li>
+        <li><a href="region.html">| 주요도시 |</a></li>
+        <li><a href="review.html">| 여행 후기 작성하기 |</a></li>
+        <li><a href="#">| 설명 |</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+      <h1>부산</h1>
+      <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+            부산은 해운대, 광안리 해변과 함께 활기찬 항구도시의 매력을 지닌 남쪽의 대표 여행지입니다.   
+          </section>
+    
+    <section style="text-align: center; margin-bottom: 40px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4FE9we5JW6I?si=OKf4tKzh5A4DnxL4&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+    <h1>부산의 관광지</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/부산/해운대해수욕장.jpg" alt="해운대 해수욕장">
+        <div class="card-content">
+          <h3>해운대 해수욕장</h3>
+          <p>부산을 대표하는 해변으로, 넓은 백사장과 맑은 바다, 주변의 다양한 편의시설이 매력적입니다.</p>
+          <a href="https://naver.me/GL8FbPGA" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/광안대교.jpg" alt="광안대교">
+        <div class="card-content">
+          <h3>광안대교</h3>
+          <p>밤에 빛나는 광안대교는 부산의 대표적인 랜드마크 중 하나로, 해안가에서 멋진 야경을 감상할 수 있습니다.</p>
+        <a href="https://naver.me/5AgLmsDi" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/감천문화마을.jpg" alt="감천문화마을">
+        <div class="card-content">
+          <h3>감천문화마을</h3>
+          <p>알록달록한 집들과 예술 작품들이 어우러진 마을로, 산복도로 위에 위치해 있어 독특한 풍경을 자랑합니다.</p>
+        <a href="https://naver.me/GalJspAJ" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/태종대.jpg" alt="태종대">
+        <div class="card-content">
+          <h3>태종대</h3>
+          <p>절벽과 바다가 어우러진 자연 경관이 아름다운 곳으로, 등대와 전망대에서의 전경이 인상적입니다.</p>
+        <a href="https://naver.me/FV7ABEEC" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/해동용궁사.jpg" alt="해동용궁사">
+        <div class="card-content">
+          <h3>해동용궁사</h3>
+          <p>바닷가 절벽 위에 위치한 사찰로, 바다와 어우러진 풍경이 독특하며, 관광객들에게 인기 있는 명소입니다.</p>
+        <a href="https://naver.me/5D8rITdm" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/오륙도스카이워크.jpg" alt="오륙도 스카이워크">
+        <div class="card-content">
+          <h3>오륙도 스카이워크</h3>
+          <p>유리 바닥의 전망대로, 바다 위를 걷는 듯한 스릴을 느낄 수 있는 장소입니다.</p>
+        <a href="https://naver.me/FeXY00Mk" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/동백섬.jpg" alt="동백섬">
+        <div class="card-content">
+          <h3>동백섬</h3>
+          <p>해운대 인근에 위치한 섬으로, 산책로와 자연 경관이 아름다워 휴식과 산책에 적합한 장소입니다.</p>
+       <a href="https://naver.me/GV2Lpoaa" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+
+    <h1>부산의 맛집</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/부산/합천국밥집.jpg" alt="합천국밥집">
+        <div class="card-content">
+          <h3>합천국밥집</h3>
+          <p>미쉐린 가이드에 선정된 돼지국밥 전문점으로, 깊은 맛의 국물과 부드러운 고기가 특징입니다.</p>
+                 <a href="https://naver.me/5tJtlQd3" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/광안리진양호횟집.jpg" alt="광안리 진양호횟집">
+        <div class="card-content">
+          <h3>광안리 진양호횟집</h3>
+          <p>광안리 해변 근처에 위치한 횟집으로, 신선한 해산물과 아름다운 바다 전망을 함께 즐길 수 있습니다.</p>
+                 <a href="https://naver.me/G9r5c7Ng" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/매드독스.jpg" alt="매드독스">
+        <div class="card-content">
+          <h3>매드독스</h3>
+          <p>시카고 스타일의 딥디쉬 피자를 제공하는 레스토랑으로, 치즈와 토핑이 풍부한 피자가 인기입니다.</p>
+        <a href="https://naver.me/GNWkACL1" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/해목.jpg" alt="해목">
+        <div class="card-content">
+          <h3>해목</h3>
+          <p>일식 전문점으로, 히츠마부시(장어덮밥)와 다양한 해산물 요리를 고급스럽게 즐길 수 있는 곳입니다.</p>
+        <a href="https://naver.me/5HkaI55U" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/스스키노.jpg" alt="스스키노">
+        <div class="card-content">
+          <h3>스스키노</h3>
+          <p>카이도 스타일의 스프카레를 제공하는 곳으로, 다양한 토핑과 매운맛 조절이 가능하여 인기가 높습니다.</p>
+          <a href="https://naver.me/FSw7QbHs" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/부산/부산에뜬고등어.jpg" alt="부산에뜬고등어 해운대점">
+        <div class="card-content">
+          <h3>부산에뜬고등어 해운대점</h3>
+          <p>화덕에서 구운 고등어구이와 다양한 생선 요리를 한상차림으로 제공하는 해운대의 인기 맛집입니다.</p>
+          <a href="https://naver.me/5huaRvUJ" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
+

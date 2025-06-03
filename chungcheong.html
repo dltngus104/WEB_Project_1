@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>충청도 소개</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a68a64;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px;
+    }
+
+    .logo img {
+      height: 74px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    main {
+      padding: 60px 40px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #1c1c1c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #f8f8f8;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      background-color:#f5f5f5;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="로고"></div>
+    <nav>
+      <ul>
+        <li><a href="main.html">| HOME |</a></li>
+        <li><a href="region.html">| 주요도시 |</a></li>
+        <li><a href="review.html">| 여행 후기 작성하기 |</a></li>
+        <li><a href="#">| 설명 |</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="section" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+      <h1>충청도</h1>
+      <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+       	충청도는 조용한 산과 들, 고즈넉한 사찰과 전통문화가 남아 있는 여유로운 분위기의 중부 내륙 지역입니다.
+      </p>
+    </section>
+    </section>
+    <section style="text-align: center; margin-bottom: 40px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/k9jrQZEYMTA?si=jhFedWk7EIQXtjBg&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+    <h1>충청도의 관광지</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/충청도/청풍호반케이블카.jpg" alt="청풍호반 케이블카 (충북 제천)">
+        <div class="card-content">
+          <h3>청풍호반 케이블카(충북 제천)</h3>
+          <p>청풍호의 아름다운 전경을 한눈에 담을 수 있는 케이블카로, 특히 가을철 단풍이 물들 때는 그 아름다움이 배가됩니다.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/도담삼봉.jpg" alt="도담삼봉 (충북 단양)">
+        <div class="card-content">
+          <h3>도담삼봉(충북 단양)</h3>
+          <p>남한강 한가운데 우뚝 솟은 세 개의 봉우리로, 단양팔경 중 으뜸으로 꼽히는 명소입니다. </p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/단양강잔도.jpg" alt="단양강 잔도 (충북 단양)">
+        <div class="card-content">
+          <h3>단양강 잔도(충북 단양)</h3>
+          <p>단양강을 따라 절벽에 설치된 길로, 유리로 된 바닥을 통해 아래를 내려다보며 강과 산이 어우러진 절경을 감상할 수 있습니다.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/공산성.jpg" alt="공산성 (충남 공주)">
+        <div class="card-content">
+          <h3>공산성(충남 공주)</h3>
+          <p>백제의 수도였던 공주에 위치한 산성으로, 금강의 아름다운 풍경과 함께 백제 시대의 건축 양식을 엿볼 수 있습니다.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+
+    <h1>충청도의 맛집</h1>
+    <section class="section grid">
+      <div class="card">
+        <img src="img/충청도/종로식당.jpg" alt="종로식당 (충북 충주)">
+        <div class="card-content">
+          <h3>종로식당(충북 충주)</h3>
+          <p>백반과 가정식을 전문으로 하는 식당으로, 갈치조림, 청국장 등 다양한 메뉴를 제공합니다. </p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/꼬불꼬불.jpg" alt="꼬불꼬불 본점 (충북 충주)">
+        <div class="card-content">
+          <h3>꼬불꼬불 본점(충북 충주)</h3>
+          <p>닭갈비, 닭곱창, 낙지 등 다양한 철판 요리를 제공하는 닭 요리 전문점입니다.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/경성한우국밥.jpg" alt="경성 한우 국밥 (충북 청주)">
+        <div class="card-content">
+          <h3>경성 한우 국밥(충북 청주)</h3>
+          <p>한우 국밥, 선지 해장국, 사골 설렁탕 등 다양한 국밥류를 제공하는 식당입니다.</p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/충청도/살구나무집도시락.jpg" alt="살구나무집 도시락 (충북 청주)">
+        <div class="card-content">
+          <h3>살구나무집 도시락(충북 청주)</h3>
+          <p>제육, 소불고기, 오징어볶음 등 다양한 도시락 메뉴를 제공하는 도시락 전문점입니다. </p>
+          <a href="https://www.naver.com/" target="_blank" style="display:inline-block; margin-top:10px; color:rgb(92, 193, 92); font-weight:bold;text-decoration: none;">
+      네이버에서 보기 →
+    </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
