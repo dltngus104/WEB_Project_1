@@ -237,6 +237,7 @@
       }
 
       /* 반응형 미디어 쿼리 */
+      /* 화면변형 */
       @media (max-width: 1200px) {
         .performance-list {
           gap: 2rem;
